@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Mannu - A Cosmic Love Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>For Mannu</h1>
+            <p class="subtitle">A Cosmic Love Interface</p>
+            <audio id="piano" loop>
+                <source src="piano.mp3" type="audio/mp3">
+            </audio>
+            <button onclick="document.getElementById('piano').play()">Mannu Theme</button>
+        </header>
+
+        <div id="animated-guy" class="guy">
+            <div class="suit">
+                <div class="arm left"></div>
+                <div class="arm right"></div>
+                <div class="head"></div>
+                <div class="legs">
+                    <div class="leg left"></div>
+                    <div class="leg right"></div>
+                </div>
+            </div>
+            <div class="action-text"></div>
+        </div>
+
+        <section id="story-map">
+            <h2>Our Quantum Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item" onclick="showStory(1)">
+                    <div class="date">Jan 24, 2025</div>
+                    <div class="event">Trichy</div>
+                </div>
+                <div class="timeline-item" onclick="showStory(2)">
+                    <div class="date">April 12, 2025</div>
+                    <div class="event">Hyderabad</div>
+                </div>
+                <div class="timeline-item" onclick="showStory(3)">
+                    <div class="date">Future</div>
+                    <div class="event">Beach Eternity</div>
+                </div>
+                <p id="story-text">Engage a node...</p>
+            </div>
+        </section>
+
+        <section id="jar">
+            <h2>Infinite Reasons I Adore You</h2>
+            <div class="jar" onclick="revealReason()">Decode Today’s Signal</div>
+            <p id="reason" class="reason-text"></p>
+        </section>
+
+        <section id="numbers">
+            <h2>Love Metrics</h2>
+            <div class="stats">
+                <div class="stat"><span id="days-together"></span> Days Active</div>
+                <div class="stat"><span>∞</span> Reasons</div>
+                <div class="stat"><span>1</span> Eternal Bond</div>
+            </div>
+        </section>
+
+        <section id="shared-dreams">
+            <h2>Our Shared Dreams</h2>
+            <div class="dreams-container">
+                <div class="dream" onmouseover="showDream(this)" onmouseout="hideDream(this)">
+                    <p class="dream-title">Stargazing in the Himalayas</p>
+                    <p class="dream-detail">We’ll camp under the stars, just you and me, in 2026.</p>
+                </div>
+                <div class="dream" onmouseover="showDream(this)" onmouseout="hideDream(this)">
+                    <p class="dream-title">Sunset in Santorini</p>
+                    <p class="dream-detail">A Greek island escape, watching the sun dip into the sea.</p>
+                </div>
+                <div class="dream" onmouseover="showDream(this)" onmouseout="hideDream(this)">
+                    <p class="dream-title">Our Dream Home</p>
+                    <p class="dream-detail">A cozy place with a garden, built together with love.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="heart-messages">
+            <h2>Messages from the Heart</h2>
+            <div class="message-carousel">
+                <p id="heart-message"></p>
+            </div>
+        </section>
+
+        <section id="future-letters">
+            <h2>Future Love Letters</h2>
+            <div class="letters-container">
+                <div class="letter" onclick="revealLetter(1)">
+                    <p class="letter-date">1 Year Together</p>
+                    <p id="letter-text-1" class="letter-text"></p>
+                </div>
+                <div class="letter" onclick="revealLetter(2)">
+                    <p class="letter-date">5 Years Together</p>
+                    <p id="letter-text-2" class="letter-text"></p>
+                </div>
+                <div class="letter" onclick="revealLetter(3)">
+                    <p class="letter-date">10 Years Together</p>
+                    <p id="letter-text-3" class="letter-text"></p>
+                </div>
+                <div class="letter" onclick="revealLetter(4)">
+                    <p class="letter-date">50 Years Together</p>
+                    <p id="letter-text-4" class="letter-text"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="love-code">
+            <h2>Love Code</h2>
+            <div class="code-container">
+                <p id="encoded-message">Encoded: 01001000 01000101 01000001 01010010 01010100</p>
+                <button onclick="decodeMessage()">Decode My Message</button>
+                <p id="decoded-message" class="decoded-text"></p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Engineered for Mannu - April 8, 2025</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
