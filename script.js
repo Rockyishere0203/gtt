@@ -1,7 +1,7 @@
 function showStory(index) {
     const stories = [
         "Trichy, Jan 24, 2025: A digital pulse on Chitchat—Mannu, you rewired my universe.",
-        "Hyderabad, April 12, 2025: Systems aligned—our first meet, a cosmic collision.",
+        "Hyderabad, April 13, 2025: Systems aligned—our first meet, a cosmic collision.",
         "Beach Eternity: Protocols set—our vows sync with the waves, infinite."
     ];
     document.getElementById("story-text").textContent = stories[index - 1];
